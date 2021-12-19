@@ -1,0 +1,21 @@
+body{
+    background-image: url(../img/close-up-woman-using-laptop.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+.layer{
+    width: 100%;
+   
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.form-group label{
+    color: #fff;
+}
+.table{
+    color: #fff ;
+}
+.layer h1{
+    font-family: 'Dancing Script', cursive;
+    color: beige;
+}

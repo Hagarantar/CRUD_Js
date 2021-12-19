@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+        <title>CRUD</title>
+    </head>
+    <body>
+        <div class="layer">
+            <h1 class="text-center pt-5"> Electric Machines`s Store</h1>
+        <div class="w-75 m-auto py-5">
+            <div class="form-group">
+                <label for="productName">productName</label>
+                <input type="text" id="productName" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="productPrice">productPrice</label>
+                <input type="number" id="productPrice" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="productCategory">productCategory</label>
+                <input type="text" id="productCategory" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="productDesc">productDesc</label>
+                <textarea type="text" id="productDesc" class="form-control"></textarea>
+            </div>
+            <button id="mainBtn" onclick="addProduct();" class="btn btn-outline-info">Add Product</button>
+        </div>
+
+        <div class="w-75 m-auto py-5">
+            <input onkeyup="searchProducts(this.value);" type="text" placeholder="Search..." class="w-75 m-auto form-control">
+             <table class="table my-5 text-center">
+                 <thead>
+                     <th>Index</th>
+                     <th>productName</th>
+                     <th>productPrice</th>
+                     <th>productCategory</th>
+                     <th>productDesc</th>
+                     <th>update</th>
+                     <th>delete</th>
+                 </thead>
+                 <tbody id="tableBody">
+                    <h2 id="alarm" class="text-danger"></h2>
+                 </tbody>
+             </table>
+            </div>
+        </div>
+
+
+        <script src="index.js"></script>
+    </body>
+</html>
